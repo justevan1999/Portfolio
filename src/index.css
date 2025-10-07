@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  overflow-x: hidden !important;
+}
+
+#projects h5  {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#projects p {
+   font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  overflow-x: hidden !important;
+  background-color: #000000;
+  /* font-family: "Bebas Neue", sans-serif; */
+}
+
+.navbar-container {
+  font-family: "Bebas Neue", serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section {
+  font-family: "Bebas Neue", serif;
+}
+
+.achieve {
+  font-family: "Bebas Neue", serif; 
+}
+
+.fontCav{
+  font-family: "Caveat", cursive !important;
+  
+}
+.top-text {
+  background: linear-gradient(270deg, #09DFFE 2.86%, #6B86FF 19.86%, #EF0CFF 75.23%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero-section {
+  display: flex;
+  /* width: 100%; */
+  margin: 0 ;
+  padding: 0;
+  /* gap: 6rem; */
+  justify-content: space-between;
+}
+
+.hero-image  {
+  width: 33%;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.gradient-bottom-border {
+  position: relative;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  color: white; /* Text color */
+  background: transparent; /* Transparent background */
+}
+
+.gradient-bottom-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.7px; /* Border thickness */
+  background: linear-gradient(
+    270deg,
+    #0b2e33cc 2.86%,
+    #6d44ce 19.86%,
+    #8948c586 50%,
+    #c146d4 75.23%
+  );
+  filter: drop-shadow(0 0 3px #422263f8) drop-shadow(0 0 6px #5c0ca7) drop-shadow(0 0 12px #621ba5);
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 10% !important;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  box-sizing: content-box;
+}
+
+.swiper {
+  width: 120% !important;
+  margin-left: -60px !important;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px !important;
+  font-weight: 600;
+  color: #ffffff;
+  
+  /* Size of the background circle */
+  width: 100%;
+  height: 28px;
+  
+  background-color: #000000 !important;
+  
+  /* Make it fully rounded */
+  border-radius: 50%;
+
+  /* Glowing shadow */
+  box-shadow: 0 0 8px #ef0cff85, 0 0 8px #ef0cff3f, 0 0 15px #a63aad;
+
+  /* Center the icon inside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mycert-mage {
+ margin-left: -60px;
+}
+
+.carousel .slide {
+  text-align: start !important;
+}
+
+.carousel .thumb {
+  display: none !important;
+}
+
+.projdiv p {
+  text-transform: none !important;
+}
+
+.projdiv {
+  display: flex;
+  gap: 1rem;
+}
+
+.mmm  {
+  font-family: "Bebas Neue", serif; 
+}
+
+.carousel.carousel-slider .control-arrow {
+display: none !important;
+}
+
+.carousel .carousel-status {
+display: none !important;
+}
+
+.lowercase-text {
+  text-transform: lowercase !important;
+}
+
+
+
+.carousel * {
+  text-transform: none !important;
+}
+
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-left: 70px;
+  padding-right: 100px;
+  color: white;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  font-size: 35px;
+}
+
+.nav-links li {
+  padding-top: 15px;
+}
+
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar.open .nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 99;
+}
+
+.proj-content {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+
+  :root{
+    /* overflow-x: hidden !important; */
+  }
+
+  br {
+    display: none !important;
+  }
+  .nav-links {
+    display: none;
+  font-size: 22px !important;
+  gap: 1rem !important;
+
+  }
+
+  .fontCav {
+    font-size: 56px !important;
+    text-align: start !important;
+    justify-content: flex-start !important;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-container {
+    gap: 3rem !important;
+    padding: 20px !important;
+}
+
+.navbar.open .nav-links {
+  padding: 20px 20px 20px 20px !important;
+  right: 50px !important;
+  background-color: #000000 !important;
+  color: #fff !important;
+  width: 382px !important;
+  border-radius: 0 !important;
+  top: 56px !important;
+}
+
+.light-bulb img {
+  display: none !important;
+}
+
+.hero-section {
+  display: block;
+  flex-direction: column-reverse;
+}
+
+.hero-text h1 {
+  font-size: 53px !important;
+}
+
+.hero-text p {
+  text-align: end !important;
+  font-size: 14px !important;
+  font-weight: 200 !important;
+}
+
+.hero-image img {
+  width: 410px !important;
+  padding: 20px !important;
+  margin-top: 30px !important;
+  margin-left: -32px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center !important;  /* Horizontal center */
+  align-items: center; 
+  width: 100% !important;
+}
+
+.hero-text {
+  margin-top: 10px !important;
+}
+
+.cdcdcd {
+  width: 96% !important;
+}
+.icons {
+  justify-content: center !important;
+}
+
+.swiper {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+.mycert-mage {
+  margin-left: 15px;
+  padding-bottom: 15px !important;
+}
+
+.mdmdmd {
+  margin-top: 40px !important;
+}
+
+/* .projdiv {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+} */
+
+.achieve {
+  padding: 20px !important;
+}
+
+.qualiii {
+  margin-top: 4rem !important;
+  margin-left: 30px !important;
+}
+
+.carousel .control-dots {
+  bottom: -15px !important;
+}
+
+.mmeee {
+  margin-top: 1rem !important;
+  margin-left: 0 !important;
+  padding: 20px !important;
+}
+
+.ddmms {
+  margin-left: 155px !important;
+  margin-top: 20px !important;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1600px) {
+  #root{
+    overflow-x: hidden !important;
+  }
+
+}
+
+
