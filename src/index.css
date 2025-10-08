@@ -346,6 +346,8 @@ display: none !important;
 .ddmms {
   margin-left: 155px !important;
   margin-top: 20px !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 }
 
