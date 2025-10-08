@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import "./Navbar.css"; // Make sure this file exists
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,14 +32,10 @@ const Navbar = () => {
             cursor: "pointer",
             listStyle: "none",
             display: "flex",
-            gap: "2rem",
           }}
         >
           <li>
-            <a
-              href="#home"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+            <a href="#home" style={{ textDecoration: "none", color: "inherit" }}>
               HOME
             </a>
           </li>
