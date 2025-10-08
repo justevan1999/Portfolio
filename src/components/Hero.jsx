@@ -133,7 +133,7 @@ const AnimatedText = () => {
         gap: "0.1em",
         color: "#FFFFFF",
         fontSize: "67.77px",
-        justifyContent: "flex-end",
+        // justifyContent: "flex-end",
         transition: "all 1s ease-in-out",
       }}
     >
