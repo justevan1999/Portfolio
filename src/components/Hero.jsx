@@ -2,40 +2,113 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 
+// const AnimatedText = () => {
+//   const text = '“Hello there!”';
+
+//   const container = {
+//     hidden: {},
+//     visible: {
+//       transition: {
+//         staggerChildren: 0.2,
+//       },
+//     },
+//     exit: {
+//       transition: {
+//         staggerChildren: 0.15,
+//         staggerDirection: -1,
+//       },
+//     },
+//   };
+
+//   const child = {
+//     hidden: { x: 50, opacity: 0 },
+//     visible: {
+//       x: 0,
+//       opacity: 1,
+//       transition: {
+//         type: "spring",
+//         stiffness: 60,
+//         damping: 10,
+//       },
+//     },
+//     exit: {
+//       x: 50,
+//       opacity: 0,
+//       transition: {
+//         duration: 0.5,
+//       },
+//     },
+//   };
+
+//   const [showText, setShowText] = useState(true);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setShowText((prev) => !prev);
+//     }, 4000);
+
+//     return () => clearInterval(interval);
+//   }, []);
+ 
+
+//   return (
+//     <motion.div
+//       variants={container}
+//       initial="hidden"
+//       animate={showText ? "visible" : "exit"}
+//       className="fontCav"
+//       style={{
+//         display: "flex",
+//         gap: "0.1em",
+//         color: "#FFFFFF",
+//         // fontFamily:"Caveat", cursive,
+//         fontSize: "67.77px",
+//         justifyContent: "flex-end",
+//       }}
+//     >
+//       {text.split("").map((char, index) => (
+//         <motion.span key={index} variants={child}>
+//           {char === " " ? "\u00A0" : char}
+//         </motion.span>
+//       ))}
+//     </motion.div>
+//   );
+// };
+
 const AnimatedText = () => {
-  const text = '“Hello there!”';
+  const text = "“Hello there!”";
 
   const container = {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.15,
       },
     },
     exit: {
       transition: {
-        staggerChildren: 0.15,
+        staggerChildren: 0.1,
         staggerDirection: -1,
       },
     },
   };
 
   const child = {
-    hidden: { x: 50, opacity: 0 },
+    hidden: { x: 30, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        stiffness: 60,
-        damping: 10,
+        duration: 1.2,
+        ease: "easeInOut",
       },
     },
     exit: {
-      x: 50,
+      x: -30,
       opacity: 0,
       transition: {
-        duration: 0.5,
+        duration: 1.2,
+        ease: "easeInOut",
       },
     },
   };
@@ -45,11 +118,9 @@ const AnimatedText = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setShowText((prev) => !prev);
-    }, 4000);
-
+    }, 5000); // smoother timing (5 seconds per loop)
     return () => clearInterval(interval);
   }, []);
- 
 
   return (
     <motion.div
@@ -61,9 +132,9 @@ const AnimatedText = () => {
         display: "flex",
         gap: "0.1em",
         color: "#FFFFFF",
-        // fontFamily:"Caveat", cursive,
         fontSize: "67.77px",
         justifyContent: "flex-end",
+        transition: "all 1s ease-in-out",
       }}
     >
       {text.split("").map((char, index) => (
@@ -74,7 +145,6 @@ const AnimatedText = () => {
     </motion.div>
   );
 };
-
 
 
 const Hero = () => {
