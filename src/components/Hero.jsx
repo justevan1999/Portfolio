@@ -130,7 +130,7 @@ const AnimatedText = () => {
       className="fontCav"
       style={{
         display: "flex",
-        gap: "0.2px",
+        gap: "0.1px",
         color: "#FFFFFF",
         fontSize: "67.77px",
         width: "100%",
