@@ -239,6 +239,11 @@ display: none !important;
 .proj-content {
   display: flex;
   gap: 1rem;
+  line-height: 20px;
+}
+
+.proj-image {
+  width: 60% !important;
 }
 
 

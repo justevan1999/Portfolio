@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "./SkillsOrbit.css";
+import SkillsOrbit from "../components/SkillsOrbit";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -30,7 +32,11 @@ const Details = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="mdmdmd" style={{ marginTop: "5rem" }}>
               <div>
-                <img className="mycert-mage" src="/mycert.png" alt="certificate" />
+                <img
+                  className="mycert-mage"
+                  src="/mycert.png"
+                  alt="certificate"
+                />
               </div>
               <div>
                 <Swiper
@@ -52,7 +58,9 @@ const Details = () => {
                     "cert88",
                   ].map((cert, index) => (
                     <SwiperSlide key={index}>
-                      <div style={{ display: "flex", justifyContent: "center" }}>
+                      <div
+                        style={{ display: "flex", justifyContent: "center" }}
+                      >
                         <img
                           style={{
                             width: "300px",
@@ -66,16 +74,20 @@ const Details = () => {
                   ))}
                 </Swiper>
               </div>
+          <SkillsOrbit />
             </div>
           </div>
 
           {/* 🟢 Middle Column - Hover Image */}
           <div className="col-lg-4 col-md-12 col-sm-12">
-            <div className="mmeee" style={{ marginLeft: "40px", marginTop: "11rem" }}>
+            <div
+              className="mmeee"
+              style={{ marginLeft: "40px", marginTop: "11rem" }}
+            >
               <div>
                 <img
                   style={{
-                    width: "95%",
+                    width: "100%",
                     transition: "width 0.3s ease-in-out",
                   }}
                   src={isMobile || isHovered ? "/yus2.png" : "/yus1.png"}
@@ -83,7 +95,11 @@ const Details = () => {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 />
-                <img style={{ width: "100px" }} src="/myselfmage.png" alt="self" />
+                <img
+                  style={{ width: "100px" }}
+                  src="/myselfmage.png"
+                  alt="self"
+                />
               </div>
               <div>
                 <img
@@ -135,14 +151,17 @@ const Details = () => {
                 Primary School Certification
               </h1>
               <h5>
-                Center Igboro Nursery & Primary School, Kwara State <br /> 2002–2011
+                Center Igboro Nursery & Primary School, Kwara State <br />{" "}
+                2002–2011
               </h5>
 
               <div style={{ marginTop: "3rem" }}>
                 <img src="/Hobby.png" alt="hobby" />
               </div>
             </div>
+            
           </div>
+
 
           {/* 🟢 Carousel - Projects */}
           <div id="projects" style={{ marginTop: "5rem" }}>
@@ -172,7 +191,7 @@ const Details = () => {
                     className="proj-image"
                     src="/proj11.png"
                     alt="Pluralcode Project"
-                    style={{ width: "100%", maxWidth: "500px", borderRadius: "8px" }}
+                    style={{ borderRadius: "8px" }}
                   />
                   <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
                     <h5
@@ -182,20 +201,42 @@ const Details = () => {
                         lineHeight: "22px",
                       }}
                     >
-                      Project: Pluralcode Academy Website & Student LMS Dashboard
+                      Project: Pluralcode Academy Website & Student ( LMS){" "}
+                      <br /> Dashboard – Bridging the Global Tech Talent Gap
                     </h5>
-                    <p style={{ fontSize: "13px" }}>
-                      As a full-time Product Designer at Pluralcode, I redesigned the
-                      company’s website and student platform, creating a user-friendly
-                      experience for learners while enhancing usability, accessibility,
-                      and engagement.
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      As a full-time Product Designer at Pluralcode, I had the
+                      responsibility <br /> of redesigning the company's
+                      website, transforming it into what it is <br /> today.
+                      Pluralcode is on a mission to bridge the global talent gap
+                      by <br /> building the largest and most impactful tech
+                      talent incubator in <br /> Africa, empowering individuals,
+                      organizations, and corporations <br /> across the
+                      continent and beyond.
                     </p>
-                    <p style={{ fontSize: "13px" }}>Check out the project:</p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      Beyond the main website, I also worked on the student
+                      learning <br /> platform, ensuring a seamless,
+                      user-friendly experience for learners. <br /> My focus was
+                      on enhancing accessibility, usability, and <br />{" "}
+                      engagement, creating an intuitive platform that supports
+                      tech <br /> education at scale.
+                    </p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      Through strategic UI/UX improvements, I helped improve{" "}
+                      <br /> navigation, visual appeal, and overall
+                      functionality, ensuring <br /> Pluralcode effectively
+                      showcases Africa’s growing tech talent to the <br />{" "}
+                      world.
+                    </p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      Check out the project:
+                    </p>
                     <a
                       href="https://www.pluralcode.academy/"
                       target="_blank"
                       rel="noreferrer"
-                      style={{ color: "#00bfff" }}
+                      style={{ color: "#7D8CFF" }}
                     >
                       https://www.pluralcode.academy/
                     </a>
@@ -216,13 +257,14 @@ const Details = () => {
                 >
                   <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
                     <h5 style={{ fontSize: "14px", marginTop: "20px" }}>
-                      PROJECT: SICKLE CELL FOUNDATION NIGERIA (SCFN) & LUTH – BMT
-                      PROGRAMME WEBSITE
+                      PROJECT: SICKLE CELL FOUNDATION NIGERIA (SCFN) & LUTH –
+                      BMT PROGRAMME WEBSITE
                     </h5>
                     <p style={{ fontSize: "13px" }}>
-                      Designed an intuitive website for SCFN & LUTH BMT Programme to make
-                      life-saving treatment for sickle cell disorder more accessible.
-                      Focused on clarity, accessibility, and easy navigation.
+                      Designed an intuitive website for SCFN & LUTH BMT
+                      Programme to make life-saving treatment for sickle cell
+                      disorder more accessible. Focused on clarity,
+                      accessibility, and easy navigation.
                     </p>
                     <p style={{ fontSize: "13px" }}>Check out the project:</p>
                     <a
@@ -238,7 +280,7 @@ const Details = () => {
                     className="proj-image"
                     src="/proj22.png"
                     alt="SCFN Project"
-                    style={{ width: "100%", maxWidth: "500px", borderRadius: "8px" }}
+                    style={{ borderRadius: "8px" }}
                   />
                 </div>
               </div>
@@ -258,7 +300,7 @@ const Details = () => {
                     className="proj-image"
                     src="/proj33.png"
                     alt="Real Estate Project"
-                    style={{ width: "100%", maxWidth: "500px", borderRadius: "8px" }}
+                    style={{ borderRadius: "8px" }}
                   />
                   <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
                     <h5 style={{ fontSize: "14px", marginTop: "20px" }}>
@@ -266,8 +308,9 @@ const Details = () => {
                     </h5>
                     <p style={{ fontSize: "13px" }}>
                       Led the design for a real estate platform and mobile app,
-                      developing intuitive dashboards for doctors, labs, and pharmacies.
-                      Improved accessibility and simplified user experience.
+                      developing intuitive dashboards for doctors, labs, and
+                      pharmacies. Improved accessibility and simplified user
+                      experience.
                     </p>
                     <p style={{ fontSize: "13px" }}>Check out the project:</p>
                     <a
