@@ -354,6 +354,10 @@ display: none !important;
   display: block !important;
   margin: 0 auto !important;
 }
+.main-circle {
+    width: 100% !important;
+    height: 247px !important;
+}
 }
 
 

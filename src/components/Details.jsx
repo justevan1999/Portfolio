@@ -74,7 +74,7 @@ const Details = () => {
                   ))}
                 </Swiper>
               </div>
-          <SkillsOrbit />
+              <SkillsOrbit />
             </div>
           </div>
 
@@ -159,9 +159,7 @@ const Details = () => {
                 <img src="/Hobby.png" alt="hobby" />
               </div>
             </div>
-            
           </div>
-
 
           {/* 🟢 Carousel - Projects */}
           <div id="projects" style={{ marginTop: "5rem" }}>
@@ -256,17 +254,45 @@ const Details = () => {
                   }}
                 >
                   <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
-                    <h5 style={{ fontSize: "14px", marginTop: "20px" }}>
+                    <h5
+                      style={{
+                        fontSize: "20px",
+                        marginTop: "20px",
+                        lineHeight: "22px",
+                      }}
+                    >
                       PROJECT: SICKLE CELL FOUNDATION NIGERIA (SCFN) & LUTH –
                       BMT PROGRAMME WEBSITE
                     </h5>
-                    <p style={{ fontSize: "13px" }}>
-                      Designed an intuitive website for SCFN & LUTH BMT
-                      Programme to make life-saving treatment for sickle cell
-                      disorder more accessible. Focused on clarity,
-                      accessibility, and easy navigation.
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      I had the opportunity to design the website for the Sickle
+                      Cell Foundation Nigeria (SCFN) & Lagos University Teaching
+                      Hospital (LUTH) Bone Marrow Transplantation (BMT)
+                      Programme. This initiative is dedicated to providing
+                      affordable, high-quality, and life-saving treatment for
+                      sickle cell disorder, making it accessible to Nigerians
+                      locally.
                     </p>
-                    <p style={{ fontSize: "13px" }}>Check out the project:</p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      Nigeria has the highest burden of sickle cell disorder in
+                      the world, with over 40 million carriers and 150,000
+                      babies born annually with the condition. Sadly, many do
+                      not survive due to a lack of access to proper diagnosis
+                      and care. This project was not just about design; it was
+                      about creating an intuitive platform that connects
+                      patients with essential treatment options.
+                    </p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      My design approach prioritized clarity, accessibility, and
+                      ease of navigation, ensuring that users could effortlessly
+                      find information on BMT, eligibility, and healthcare
+                      resources. By blending effective UI/UX principles, I
+                      helped transform complex medical content into a seamless
+                      and user-friendly digital experience.
+                    </p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      Check out the project:
+                    </p>
                     <a
                       href="https://scfn-luth-transplant.sicklecellfoundation.com/"
                       target="_blank"
@@ -303,16 +329,54 @@ const Details = () => {
                     style={{ borderRadius: "8px" }}
                   />
                   <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
-                    <h5 style={{ fontSize: "14px", marginTop: "20px" }}>
-                      PROJECT: REAL ESTATE PROPERTY LISTING PLATFORM
+                    <h5
+                      style={{
+                        fontSize: "20px",
+                        marginTop: "20px",
+                        lineHeight: "22px",
+                      }}
+                    >
+                      PROJECT: PRETTY HEALTH CARE WEBSITE
                     </h5>
-                    <p style={{ fontSize: "13px" }}>
-                      Led the design for a real estate platform and mobile app,
-                      developing intuitive dashboards for doctors, labs, and
-                      pharmacies. Improved accessibility and simplified user
-                      experience.
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      At Rex Health Limited, I led the design of the website,
+                      mobile app, and dashboards for doctors, labs, and
+                      pharmacies, ensuring a seamless user experience.
                     </p>
-                    <p style={{ fontSize: "13px" }}>Check out the project:</p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      Rex Health is a pioneering healthcare organization in
+                      Nigeria, offering accessible, tech-driven medical
+                      solutions. The Rex Health App caters to university
+                      students, individuals, and organizations, providing
+                      quality healthcare services.
+                    </p>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      ✅ Website & App – Intuitive platforms for booking
+                      consultations, accessing records, and managing care.
+                    </p>
+
+                    <span style={{ fontSize: "13px", fontWeight: "200" }}>
+                      ✅ Doctor’s Dashboard – Efficient patient record and
+                      appointment management.
+                    </span>
+
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      ✅ Lab Dashboard – Simplified test requests and result
+                      processing
+                    </p>
+
+                    <span style={{ fontSize: "13px", fontWeight: "200" }}>
+                      ✅ Pharmacy Dashboard – Streamlined prescription and stock
+                      management.
+                    </span>
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      This redesign helped bridge healthcare gaps and improve
+                      accessibility.
+                    </p>
+
+                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
+                      Check out the project:
+                    </p>
                     <a
                       href="https://your-realestate-demo-link.com/"
                       target="_blank"
