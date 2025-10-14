@@ -26,6 +26,8 @@ html {
 }
 
 
+
+
 body {
   overflow-x: hidden !important;
   background-color: #000000;
@@ -161,14 +163,6 @@ body {
   display: none !important;
 }
 
-.projdiv p {
-  text-transform: none !important;
-}
-
-.projdiv {
-  display: flex;
-  gap: 1rem;
-}
 
 .mmm  {
   font-family: "Bebas Neue", serif; 
@@ -178,9 +172,15 @@ body {
 display: none !important;
 }
 
-.carousel .carousel-status {
-display: none !important;
+
+
+
+
+.slide-content {
+  width: 100% !important;
 }
+
+
 
 .lowercase-text {
   text-transform: lowercase !important;
@@ -236,15 +236,42 @@ display: none !important;
   z-index: 99;
 } */
 
-.proj-content {
-  display: flex;
-  gap: 1rem;
-  line-height: 20px;
+.content {
+  color: #f3f3f3;
+  font-weight: 200;
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
-.proj-image {
-  width: 60% !important;
+.content h5{
+  font-size: 18px !important;
 }
+
+.content-mage img {
+  margin-top: 13px;
+  width: 620px !important;
+  /* height: 70vh; */
+}
+
+.linksss {
+  display: flex;
+  gap: 1rem;
+}
+
+.sub-circle {
+    font-size: 8px !important;
+}
+
+.proj-slide {
+  display: flex !important; 
+}
+
+.carousel .control-dots {
+  /* bottom: -16px !important; */
+}
+
+
 
 
 @media screen and (max-width: 992px) {
@@ -261,6 +288,10 @@ display: none !important;
   .hamburger {
     display: block;
     margin-top: 0.5rem;
+  }
+
+  .nav-links{
+    gap: 10px !important;
   }
 
 
@@ -357,6 +388,68 @@ display: none !important;
 .main-circle {
     width: 100% !important;
     height: 247px !important;
+}
+
+  .carousel-slide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slide-content {
+    padding: 10px;
+  }
+
+  .carousel-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 30px -10px #EF0CFF;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Alternate direction for variety */
+.carousel-slide:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.slide-image {
+  flex: 1;
+}
+
+.slide-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.slide-content {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.slide-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.slide-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
 }
 }
 

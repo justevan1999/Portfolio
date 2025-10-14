@@ -164,6 +164,7 @@ const Details = () => {
           {/* 🟢 Carousel - Projects */}
           <div id="projects" style={{ marginTop: "5rem" }}>
             <Carousel
+              autoPlay
               interval={3000}
               infiniteLoop
               showThumbs={false}
@@ -176,216 +177,47 @@ const Details = () => {
             >
               {/* ✅ Project 1 */}
               <div className="proj-slide">
-                <div
-                  className="proj-content"
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "20px",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <img
-                    className="proj-image"
-                    src="/proj11.png"
-                    alt="Pluralcode Project"
-                    style={{ borderRadius: "8px" }}
-                  />
-                  <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
-                    <h5
-                      style={{
-                        fontSize: "20px",
-                        marginTop: "20px",
-                        lineHeight: "22px",
-                      }}
-                    >
-                      Project: Pluralcode Academy Website & Student ( LMS){" "}
-                      <br /> Dashboard – Bridging the Global Tech Talent Gap
-                    </h5>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      As a full-time Product Designer at Pluralcode, I had the
-                      responsibility <br /> of redesigning the company's
-                      website, transforming it into what it is <br /> today.
-                      Pluralcode is on a mission to bridge the global talent gap
-                      by <br /> building the largest and most impactful tech
-                      talent incubator in <br /> Africa, empowering individuals,
-                      organizations, and corporations <br /> across the
-                      continent and beyond.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      Beyond the main website, I also worked on the student
-                      learning <br /> platform, ensuring a seamless,
-                      user-friendly experience for learners. <br /> My focus was
-                      on enhancing accessibility, usability, and <br />{" "}
-                      engagement, creating an intuitive platform that supports
-                      tech <br /> education at scale.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      Through strategic UI/UX improvements, I helped improve{" "}
-                      <br /> navigation, visual appeal, and overall
-                      functionality, ensuring <br /> Pluralcode effectively
-                      showcases Africa’s growing tech talent to the <br />{" "}
-                      world.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      Check out the project:
-                    </p>
-                    <a
-                      href="https://www.pluralcode.academy/"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "#7D8CFF" }}
-                    >
-                      https://www.pluralcode.academy/
-                    </a>
-                  </div>
+                <div className="content">
+                  <h5>HELLO</h5>
+                </div>
+                <div className="content-image">
+                  <img src="/proj11.png" alt="" />
                 </div>
               </div>
 
               {/* ✅ Project 2 */}
               <div className="proj-slide">
-                <div
-                  className="proj-content"
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "20px",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
-                    <h5
-                      style={{
-                        fontSize: "20px",
-                        marginTop: "20px",
-                        lineHeight: "22px",
-                      }}
-                    >
-                      PROJECT: SICKLE CELL FOUNDATION NIGERIA (SCFN) & LUTH –
-                      BMT PROGRAMME WEBSITE
-                    </h5>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      I had the opportunity to design the website for the Sickle
-                      Cell Foundation Nigeria (SCFN) & Lagos University Teaching
-                      Hospital (LUTH) Bone Marrow Transplantation (BMT)
-                      Programme. This initiative is dedicated to providing
-                      affordable, high-quality, and life-saving treatment for
-                      sickle cell disorder, making it accessible to Nigerians
-                      locally.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      Nigeria has the highest burden of sickle cell disorder in
-                      the world, with over 40 million carriers and 150,000
-                      babies born annually with the condition. Sadly, many do
-                      not survive due to a lack of access to proper diagnosis
-                      and care. This project was not just about design; it was
-                      about creating an intuitive platform that connects
-                      patients with essential treatment options.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      My design approach prioritized clarity, accessibility, and
-                      ease of navigation, ensuring that users could effortlessly
-                      find information on BMT, eligibility, and healthcare
-                      resources. By blending effective UI/UX principles, I
-                      helped transform complex medical content into a seamless
-                      and user-friendly digital experience.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      Check out the project:
-                    </p>
-                    <a
-                      href="https://scfn-luth-transplant.sicklecellfoundation.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "#00bfff" }}
-                    >
-                      https://scfn-luth-transplant.sicklecellfoundation.com/
-                    </a>
-                  </div>
-                  <img
-                    className="proj-image"
-                    src="/proj22.png"
-                    alt="SCFN Project"
-                    style={{ borderRadius: "8px" }}
-                  />
+                <div className="content">
+                  <h5>HELLO</h5>
+                </div>
+                <div className="content-image">
+                  <img src="/proj22.png" alt="" />
                 </div>
               </div>
 
               {/* ✅ Project 3 */}
               <div className="proj-slide">
-                <div
-                  className="proj-content"
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "20px",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <img
-                    className="proj-image"
-                    src="/proj33.png"
-                    alt="Real Estate Project"
-                    style={{ borderRadius: "8px" }}
-                  />
-                  <div style={{ color: "#FFF", textAlign: "left", flex: 1 }}>
-                    <h5
-                      style={{
-                        fontSize: "20px",
-                        marginTop: "20px",
-                        lineHeight: "22px",
-                      }}
-                    >
-                      PROJECT: PRETTY HEALTH CARE WEBSITE
-                    </h5>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      At Rex Health Limited, I led the design of the website,
-                      mobile app, and dashboards for doctors, labs, and
-                      pharmacies, ensuring a seamless user experience.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      Rex Health is a pioneering healthcare organization in
-                      Nigeria, offering accessible, tech-driven medical
-                      solutions. The Rex Health App caters to university
-                      students, individuals, and organizations, providing
-                      quality healthcare services.
-                    </p>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      ✅ Website & App – Intuitive platforms for booking
-                      consultations, accessing records, and managing care.
-                    </p>
-
-                    <span style={{ fontSize: "13px", fontWeight: "200" }}>
-                      ✅ Doctor’s Dashboard – Efficient patient record and
-                      appointment management.
-                    </span>
-
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      ✅ Lab Dashboard – Simplified test requests and result
-                      processing
-                    </p>
-
-                    <span style={{ fontSize: "13px", fontWeight: "200" }}>
-                      ✅ Pharmacy Dashboard – Streamlined prescription and stock
-                      management.
-                    </span>
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      This redesign helped bridge healthcare gaps and improve
-                      accessibility.
-                    </p>
-
-                    <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                      Check out the project:
-                    </p>
-                    <a
-                      href="https://your-realestate-demo-link.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "#00bfff" }}
-                    >
-                      https://your-realestate-demo-link.com/
-                    </a>
-                  </div>
+                <div className="content">
+                  <h5>HELLO</h5>
+                </div>
+                <div className="content-image">
+                  <img src="/proj44.png" alt="" />
+                </div>
+              </div>
+              <div className="proj-slide">
+                <div className="content">
+                  <h5>HELLO</h5>
+                </div>
+                <div className="content-image">
+                  <img src="/proj33.png" alt="" />
+                </div>
+              </div>
+              <div className="proj-slide">
+                <div className="content">
+                  <h5>HELLO</h5>
+                </div>
+                <div className="content-image">
+                  <img src="/proj55.png" alt="" />
                 </div>
               </div>
             </Carousel>
