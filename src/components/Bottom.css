@@ -1,0 +1,11 @@
+.bottom h5 {
+   font-size: 15px;
+   color: #fff;
+   padding-top: 1rem;
+   text-align: center;
+   border-top: 1px solid #b236ff8a;
+}
+
+.bottom {
+    margin-top: 150px;
+}
