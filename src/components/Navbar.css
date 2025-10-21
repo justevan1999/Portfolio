@@ -101,12 +101,9 @@
     display: block;
   }
   .navbar-container {
-    gap: 5.5rem !important;
-    padding-left: 20px !important;
+    padding: 16px !important;
+    right: -120px;
 }
- .carousel-slide {
-    transition: none;
-  }
 }
 
 /* small polish */
