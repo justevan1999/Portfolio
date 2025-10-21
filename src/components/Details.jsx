@@ -161,9 +161,10 @@ const Details = () => {
           </div>
 
           {/* 🟢 Carousel - Projects */}
+          {/* 🟢 Carousel - Projects */}
           <div id="projects" style={{ marginTop: "5rem" }}>
             <Carousel
-              autoPlay
+              autoPlay={!isMobile} // ❌ disables autoplay on mobile ✅ enables on desktop
               interval={3000}
               infiniteLoop
               showThumbs={false}
@@ -290,15 +291,14 @@ const Details = () => {
                   <p>
                     My contributions: <br />
                      ✅Website & App – Intuitive platforms for booking
-                    consultations, accessing records, and managing care.
-                    <br />
+                    consultations, accessing records, and managing care. <br />
                      ✅Doctor’s Dashboard – Efficient patient record and
                     appointment management. <br />
                      ✅Lab Dashboard – Simplified test requests and result
                     processing. <br />
-                     ✅Pharmacy Dashboard – Streamlined prescription and stock{" "}
-                    <br /> management. This redesign helped bridge healthcare
-                    gaps and improve accessibility.
+                     ✅Pharmacy Dashboard – Streamlined prescription and stock
+                    management. This redesign helped bridge healthcare gaps and
+                    improve accessibility.
                   </p>
                   <p>Check out the project here:</p>
                   <a
@@ -360,6 +360,8 @@ const Details = () => {
                   <img src="/proj44.png" alt="" />
                 </div>
               </div>
+
+              {/* ✅ Project 5 */}
               <div id="lll" className="proj-slide">
                 <div className="content-image">
                   <img src="/proj55.png" alt="" />

@@ -104,6 +104,9 @@
     padding: 20px;
     right: -80px;
 }
+ .carousel-slide {
+    transition: none;
+  }
 }
 
 /* small polish */
