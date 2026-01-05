@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Details from './components/Details'
 import Bottom from './components/Bottom'
 
+
 const App = () => {
   return (
     <div>
