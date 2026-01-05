@@ -106,8 +106,9 @@
 }
 
 .nav-logo-img {
-    height: initial !important;
-    margin-left: 1.5px !important;
+            height: initial !important;
+        margin-left: 1.5px !important;
+        width: 250px;
 }
 
 }
